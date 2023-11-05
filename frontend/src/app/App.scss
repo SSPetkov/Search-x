@@ -1,0 +1,20 @@
+@import '@styles/variables';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $background-color;
+}
+
+.container-content {
+  padding: 5px;
+}

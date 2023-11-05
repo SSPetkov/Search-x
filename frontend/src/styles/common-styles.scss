@@ -1,0 +1,30 @@
+@import "@styles/variables";
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.max-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-footer-colors {
+  background-color: $primary-color;
+  color: $text-color;
+}
+
+.text-link {
+  text-decoration: none;
+  transition: color 0.3s;
+  color: $text-color;
+
+  &:hover, &:active {
+    color: $secondary-color;
+  }
+}
+
+.padding-unit {
+  padding: $spacing-unit;
+}

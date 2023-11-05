@@ -1,0 +1,50 @@
+// Color Variables
+$primary-color: #273e59;
+$secondary-color: #f98948;
+$background-color: #f8f9fa;
+$background-color-mid: #0077cc;
+$background-color-dark: #333;
+$text-color: #ffffff;
+$border-color: #ccc;
+$hover-color: #cbcbcb;
+
+// Alerts
+$alert-success-bg: #28a745;
+$alert-danger-bg: #dc3545;
+$alert-info-bg: #17a2b8;
+$alert-warning-bg: #ffc107;
+$alert-text-color: #fff;
+
+// Navigation
+$navbar-bg: $primary-color;
+$navbar-text-color: $text-color;
+$navbar-link-color: $text-color;
+$navbar-link-hover-color: $secondary-color;
+
+// Links
+$link-color: #1a0dab;
+$link-hover-color: $secondary-color;
+
+// Buttons
+$button-bg: $primary-color;
+$button-text-color: $text-color;
+$button-hover-bg: $secondary-color;
+$button-hover-text: $background-color-dark;
+
+$danger-button-bg: $alert-danger-bg;
+$danger-button-text: $text-color;
+$danger-button-hover-bg: #8a0000;
+$danger-button-hover-text: $text-color;
+
+// Footer
+$footer-bg: $primary-color;
+$footer-text-color: #fff;
+
+// Screen sizes
+$medium-screen: 768px;
+
+//Spacing units
+$spacing-unit: 10px;
+$border-radius: 3px;
+$input-font-size: 16px;
+$result-item-padding: 16px;

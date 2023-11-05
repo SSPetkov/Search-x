@@ -1,0 +1,53 @@
+@import '@styles/variables';
+
+.autocomplete-container {
+  max-width: 400px;
+}
+
+.results-dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 400px;
+  max-height: 400px;
+  overflow-y: hidden;
+  border: 1px solid $background-color-dark;
+  background-color: $background-color;
+  box-shadow: 0 2px 4px $background-color-dark;
+  z-index: 100;
+  border-radius: $border-radius;
+
+  li {
+    padding: $spacing-unit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: left;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    &.selected {
+      background-color: $hover-color;
+    }
+  }
+}
+
+input {
+  width: 100%;
+  padding: $spacing-unit;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  font-size: $input-font-size;
+
+  &:focus + .results-dropdown {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .results-dropdown {
+    max-height: 150px;
+  }
+}

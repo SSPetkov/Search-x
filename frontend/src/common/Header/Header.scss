@@ -1,0 +1,44 @@
+@import '@styles/variables';
+@import '@styles/common-styles';
+
+.header {
+  @extend .header-footer-colors;
+  @extend .padding-unit;
+}
+
+.navbar {
+  //@extend .flex-center;
+  @extend .max-container;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  .nav-link {
+    @extend .text-link;
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile Header Styles */
+
+@media (max-width: $medium-screen) {
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+}

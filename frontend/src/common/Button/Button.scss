@@ -1,0 +1,29 @@
+@import "@styles/variables";
+.custom-button {
+  padding: 2px 8px;
+  background-color: $button-bg;
+  color: $button-text-color;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  min-width: 120px;
+  float: right;
+  //width: 30%;
+}
+
+.custom-button:hover {
+  background-color: $button-hover-bg;
+  color: $button-hover-text;
+}
+
+.danger-button {
+  background-color: $danger-button-bg;
+  color: $danger-button-text;
+}
+
+.danger-button:hover {
+  background-color: $danger-button-hover-bg;
+  color: $danger-button-hover-text;
+}

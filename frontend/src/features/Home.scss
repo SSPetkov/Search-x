@@ -1,0 +1,21 @@
+@import "@styles/variables";
+.home {
+  text-align: center;
+  padding: 20px;
+
+  .home-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 10px;
+
+    .home-title {
+      font-size: 1.5rem;
+    }
+  }
+}

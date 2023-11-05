@@ -1,0 +1,20 @@
+{
+  "name": "search-x",
+  "version": "1.0.0",
+  "description": "The new way to search",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd frontend && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "install:server": "cd server && npm install",
+    "install:client": "cd frontend && npm install",
+    "install": "npm run install:server && npm run install:client"
+  },
+  "keywords": [],
+  "author": "Svetoslav Petkov",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

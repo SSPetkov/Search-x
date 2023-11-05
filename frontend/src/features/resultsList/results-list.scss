@@ -1,0 +1,41 @@
+@import '@styles/variables';
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-result-item {
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: $background-color;
+  transition: background-color 0.3s;
+  text-align: left;
+
+  .result-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: $link-color;
+  }
+
+  .result-description {
+    font-size: 16px;
+    margin-top: 8px;
+    color: $background-color-dark;
+  }
+
+  .result-url {
+    font-size: 14px;
+    color: $background-color-mid;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+
+  .result-url:hover {
+    text-decoration: underline;
+  }
+}
