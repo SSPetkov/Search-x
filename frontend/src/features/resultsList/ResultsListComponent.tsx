@@ -12,7 +12,7 @@ interface SearchResultsProps {
   elapsed: number;
 }
 
-const SearchResults: React.FC<SearchResultsProps> = ({ items, elapsed }) => {
+const SearchResults: React.FC<SearchResultsProps> = React.memo(({ items, elapsed }) => {
   return (
     <div className="search-results">
       <div className="search-results-metadata">
@@ -38,6 +38,6 @@ const SearchResults: React.FC<SearchResultsProps> = ({ items, elapsed }) => {
       ))}
     </div>
   );
-};
+});
 
 export default SearchResults;
